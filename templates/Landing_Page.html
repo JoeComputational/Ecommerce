@@ -1,0 +1,87 @@
+{% extends "user_default.html" %} {% block title %}Product Sale{%endblock%} {%
+block header %} {% endblock %} {%block content%}
+
+<div class="banner-landing">
+  <div class="bg-dark w-100 h-100" style="opacity: 0.7">
+    <div
+      class="banner-text"
+      style="
+        padding-top: 180px;
+        padding-bottom: 200px;
+        opacity: 1;
+        color: goldenrod;
+      "
+    >
+      <h1
+        class="text-center"
+        style="
+          font-weight: 1000 !important;
+          font-size: xxx-large;
+          color: goldenrod;
+        "
+      >
+        PURCHASE YOUR FAVORITE PRODUCT
+      </h1>
+      <br />
+      <h3 class="text-center mb-5">WITHOUT WORRYING ABOUT FAKE PRODUCTS</h3>
+      <center>
+        <a
+          href="/login"
+          class="btn btn-transparent text-light p-3 browse-button"
+        >
+          Browse Now !
+        </a>
+      </center>
+    </div>
+  </div>
+</div>
+<div class="row m-5">
+  <div class="col-auto">
+    <img
+      src="{{ url_for('static', filename='images/login-pic.png') }}"
+      width="400px"
+      alt=""
+    />
+  </div>
+  <div class="col p-5">
+    <h2>Login</h2>
+    <p>
+      By Logging in, you agree to the <br />ridiculously long terms that you
+      <br />didn't bother to read.
+    </p>
+  </div>
+</div>
+<div class="row m-5">
+  <div class="col p-5">
+    <h2>Choose the Product</h2>
+    <p>
+      Pick the product you want to buy <br />No need to worry about the fake
+      products<br />You will get thousands of products of similar kind.
+    </p>
+  </div>
+  <div class="col-auto">
+    <img
+      src="{{ url_for('static', filename='images/select-book.jpg') }}"
+      width="400px"
+      alt=""
+    />
+  </div>
+</div>
+<div class="row m-5">
+  <div class="col-auto">
+    <img
+      src="{{ url_for('static', filename='images/payment.jpg') }}"
+      width="400px"
+      alt=""
+    />
+  </div>
+  <div class="col p-5">
+    <h2>Complete the payment</h2>
+    <p>
+      Pay to Get to get the start delivering process <br />100% satisfactory and
+      trusted results.
+    </p>
+  </div>
+</div>
+
+{%endblock%}
